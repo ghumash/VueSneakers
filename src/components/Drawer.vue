@@ -47,8 +47,8 @@ const buttonDisabled = computed(() => isCreating.value || cartIsEmpty.value)
     <div v-if="!totalPrice || orderId" class="flex h-full items-center">
       <InfoBlock
         v-if="!totalPrice && !orderId"
-        title="Корзина пустая"
-        description="Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ."
+        title="Cart is empty"
+        description="Add at least one pair of sneakers to complete your order."
         image-url="/package-icon.png"
       />
       <InfoBlock

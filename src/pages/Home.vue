@@ -124,13 +124,13 @@ watch(filters, fetchItems)
 
 <template>
   <div class="flex justify-between items-center">
-    <h2 class="text-3xl font-bold mb-8">Все кроссовки</h2>
+    <h2 class="text-3xl font-bold mb-8">All sneakers</h2>
 
     <div class="flex gap-4">
       <select @change="onChangeSelect" class="py-2 px-3 border rounded-md outline-none">
-        <option value="name">По названию</option>
-        <option value="price">По цене (дешевые)</option>
-        <option value="-price">По цене (дорогие)</option>
+        <option value="name">by name</option>
+        <option value="price">by price (lower)</option>
+        <option value="-price">by price (higher)</option>
       </select>
 
       <div class="relative">
